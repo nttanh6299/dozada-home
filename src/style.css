@@ -4,6 +4,10 @@
 
 @tailwind utilities;
 
+:root {
+  --btnHover: #0E4F7F;
+}
+
 html {
   -webkit-font-smoothing: antialiased;
 }
@@ -76,4 +80,16 @@ html {
 .newsletter-wrap::after {
   top: -30%;
   right: -10%;
+}
+
+.focus-none:focus {
+  border:none;
+  outline: none;
+}
+
+.doz-btn-transition:hover {
+  transition: all 0.1s ease-in-out;
+
+  background-color: var(--btnHover);
+  color: #fff;
 }

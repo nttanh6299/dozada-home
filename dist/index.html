@@ -20,13 +20,13 @@
       </div>
 
       <ul class="flex flex-row items-center">
-        <li><a class="block px-5 py-2" href="./tinh-nang"> Tính năng </a></li>
+        <li class="doz-btn-transition"><a class="block px-5 py-2" href="./tinh-nang"> Tính năng </a></li>
 
-        <li><a class="block px-5 py-2" href="./giao-dien">Giao diện</a></li>
+        <li class="doz-btn-transition"><a class="block px-5 py-2" href="./giao-dien">Giao diện</a></li>
 
-        <li><a class="block px-5 py-2" href="./dich-vu">Dịch vụ</a></li>
+        <li class="doz-btn-transition"><a class="block px-5 py-2" href="./dich-vu">Dịch vụ</a></li>
 
-        <li><a class="block px-5 py-2" href="./tai-lieu">Tài liệu</a></li>
+        <li class="doz-btn-transition"><a class="block px-5 py-2" href="./tai-lieu">Tài liệu</a></li>
 
         <li class="flex justify-center items-center cursor-pointer px-5 py-2">
           <img
@@ -55,12 +55,11 @@
         </li>
 
         <li>
-          <button
-            class="bg-darkBlue text-white px-8 py-2 rounded-full focus:border-none focus:outline-none"
-            type="button"
+          <a href="./"
+            class="bg-darkBlue text-white px-8 py-2 rounded-full focus-none"
           >
             Demo
-          </button>
+        </a>
         </li>
       </ul>
     </nav>
@@ -82,7 +81,7 @@
               đồng hành với khách hàng ở mọi thời điểm và vị trí.
             </p>
 
-            <div
+            <form
               class="w-3/4 bg-white flex text-base text-white rounded-full py-1 px-1"
             >
               <div class="flex justify-center items-center pl-5 pr-2">
@@ -125,11 +124,11 @@
 
               <button
                 class="bg-darkBlue text-white px-5 py-3 font-semibold rounded-full focus:border-none focus:outline-none uppercase"
-                type="button"
+                type="submit"
               >
                 Dùng thử ngay
               </button>
-            </div>
+            </form>
           </div>
 
           <div class="flex-1">
@@ -210,17 +209,16 @@
             </ul>
 
             <a
-              class="inline-block text-32 font-semibold text-doz-darkBlue mt-4 mb-8"
+              class="inline-block p-4 text-32 font-semibold text-doz-darkBlue mt-4 mb-8 doz-btn-transition"
               href="#"
               >Live Demo</a
             >
 
-            <button
-              class="bg-blue text-26 text-white font-semibold px-10 py-5 rounded-full focus:border-none focus:outline-none uppercase"
-              type="button"
+            <a href="./"
+              class="bg-blue text-26 text-white font-semibold px-10 py-5 rounded-full focus-none uppercase doz-btn-transition"
             >
               Dùng thử miễn phí
-            </button>
+          </a>
 
             <p class="text-2xl text-doz-primary italic mt-6">
               *Hiệu quả ngay trong 14 ngày dùng thử trọn gói miễn phí.
@@ -254,12 +252,11 @@
               sóc khách hàng được thực hiện tự động 24/7.
             </p>
 
-            <button
-              class="bg-blue text-26 text-white font-semibold px-10 py-5 rounded-full focus:border-none focus:outline-none uppercase"
-              type="button"
+            <a href="./"
+              class="bg-blue text-26 text-white font-semibold px-10 py-5 rounded-full focus:border-none focus:outline-none uppercase doz-btn-transition"
             >
               Liên hệ tư vấn
-            </button>
+          </a>
           </div>
 
           <div class="w-1/2">
@@ -398,12 +395,11 @@
               />
             </div>
 
-            <button
-              class="bg-blue text-26 text-white font-semibold px-10 py-5 rounded-full focus:border-none focus:outline-none uppercase"
-              type="button"
+            <a href="./"
+              class="bg-blue text-26 text-white font-semibold px-10 py-5 rounded-full uppercase doz-btn-transition focus-none"
             >
               Bắt đầu ngay
-            </button>
+          </a>
           </div>
         </section>
 
@@ -427,12 +423,11 @@
               lúc, mọi nơi vì tất cả chỉ trên cùng một hệ thống.
             </p>
 
-            <button
-              class="bg-blue text-26 text-white font-semibold px-10 py-5 rounded-full focus:border-none focus:outline-none uppercase"
-              type="button"
+            <a href="./"
+              class="bg-blue text-26 text-white font-semibold px-10 py-5 rounded-full focus:border-none focus:outline-none uppercase doz-btn-transition"
             >
                Dùng thử miễn phí
-            </button>
+          </a>
 
             <p class="text-2xl text-doz-primary italic mt-6">
               *Hiệu quả ngay trong 14 ngày dùng thử trọn gói miễn phí.
@@ -735,7 +730,7 @@
                 placeholder="Để lại mail ở đây"
               />
               <button
-                class="bg-lighterBlue text-white text-22 font-bold py-2 px-16 rounded-full"
+                class="bg-lighterBlue text-white text-22 font-bold py-2 px-16 rounded-full focus:border-none focus:outline-none doz-btn-transition"
                 type="submit"
               >
                 Gửi
@@ -871,7 +866,7 @@
             </p>
             <p class="mb-4">Tổng đài hỗ trợ:</p>
             <p class="mb-4">Số hỗ trợ ngoài giờ:</p>
-            <p>Email: dozada@gmail.com</p>
+            <p>Email: <a href="mailto:dozada@gmail.com">dozada@gmail.com</a></p>
           </div>
 
           <div class="flex-1 text-26 text-center">
@@ -879,7 +874,7 @@
 
             <ul class="flex justify-center items-center">
               <li>
-                <a class="flex justify-center items-center w-12 h-12 mr-3 bg-lightBlue" href="./" target="_blank">
+                <a class="flex justify-center items-center w-12 h-12 mr-3 bg-lightBlue doz-btn-transition" href="./" target="_blank">
                   <svg
                   width="21"
                   height="11"
@@ -894,7 +889,7 @@
                 </svg></a>
               </li>
               <li>
-                <a class="flex justify-center items-center w-12 h-12 mr-3 bg-lightBlue" href="./" target="_blank"
+                <a class="flex justify-center items-center w-12 h-12 mr-3 bg-lightBlue doz-btn-transition" href="./" target="_blank"
                   ><svg
                     width="18"
                     height="18"
@@ -908,7 +903,7 @@
                     /></svg></a>
               </li>
               <li>
-                <a class="flex justify-center items-center w-12 h-12 bg-lightBlue" href="./" target="_blank">
+                <a class="flex justify-center items-center w-12 h-12 bg-lightBlue doz-btn-transition" href="./" target="_blank">
                   <svg
                     width="18"
                     height="18"
@@ -934,7 +929,7 @@
                   placeholder="Để lại mail ở đây"
                 />
                 <button
-                  class="bg-lightBlue text-white text-22 font-bold py-2 px-8 rounded-full"
+                  class="bg-lightBlue text-white text-22 font-bold py-2 px-8 rounded-full focus:border-none focus:outline-none doz-btn-transition"
                   type="submit"
                 >
                   Gửi
