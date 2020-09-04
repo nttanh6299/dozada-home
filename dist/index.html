@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dozada</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="flex justify-between w-11/12 bg-white py-5 mx-auto text-doz-dark text-2xl"
+    >
+      <div>
+        <h1>
+          <a class="block" href="./">
+            <img src="images/logo.svg" alt="Dozada" width="102" height="72" />
+          </a>
+        </h1>
+      </div>
+
+      <ul class="flex flex-row items-center">
+        <li><a class="block px-5 py-2" href="./tinh-nang"> Tính năng </a></li>
+
+        <li><a class="block px-5 py-2" href="./giao-dien">Giao diện</a></li>
+
+        <li><a class="block px-5 py-2" href="./dich-vu">Dịch vụ</a></li>
+
+        <li><a class="block px-5 py-2" href="./tai-lieu">Tài liệu</a></li>
+
+        <li class="flex justify-center items-center cursor-pointer px-5 py-2">
+          <img
+            class="block mr-2"
+            src="./images/vn_flag.png"
+            alt="vn flag"
+            width="50"
+            height="30"
+          />
+
+          <svg
+            width="15"
+            height="10"
+            viewBox="0 0 19 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.375 2L9.5 8L16.625 2"
+              stroke="#0E4F7F"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </li>
+
+        <li>
+          <button
+            class="bg-darkBlue text-white px-8 py-2 rounded-full focus:border-none focus:outline-none"
+            type="button"
+          >
+            Demo
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <!--/ Navbar -->
+
+    <!-- Header -->
+    <header>
+      <div class="bg-darkestBlue">
+        <div
+          class="flex justify-center items-center w-11/12 pt-32 pb-24 mx-auto"
+        >
+          <div class="flex-1 mr-32">
+            <h2 class="text-white leading-tight text-60 mb-4 font-bold">
+              Mang đến trải nghiệm thú vị cho khách hàng của bạn
+            </h2>
+
+            <p class="text-doz-gray text-26 mb-10 font-normal">
+              Giúp thương hiệu của bạn trở nên đa dạng và nhanh chóng để cùng
+              đồng hành với khách hàng ở mọi thời điểm và vị trí.
+            </p>
+
+            <div
+              class="w-3/4 bg-white flex text-base text-white rounded-full py-1 px-1"
+            >
+              <div class="flex justify-center items-center pl-5 pr-2">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.2677 9.06104L13.0023 12.4953C12.1951 13.1282 11.0635 13.1282 10.2563 12.4953L5.95422 9.06104"
+                    stroke="#5B5E6D"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.88787 3.5H16.3158C17.6752 3.51525 18.969 4.08993 19.896 5.0902C20.823 6.09048 21.3022 7.42903 21.222 8.79412V15.322C21.3022 16.6871 20.823 18.0256 19.896 19.0259C18.969 20.0262 17.6752 20.6009 16.3158 20.6161H6.88787C3.96796 20.6161 2 18.2407 2 15.322V8.79412C2 5.87545 3.96796 3.5 6.88787 3.5Z"
+                    stroke="#5B5E6D"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <span class="text-doz-secondary mx-2">Email</span>
+
+                <div style="height: 50%; color: #E0E0E0;" class="vertical"></div>
+              </div>
+
+              <div class="flex-1 text-doz-dark">
+                <input
+                  class="block w-full h-full focus:outline-none"
+                  type="text"
+                />
+              </div>
+
+              <button
+                class="bg-darkBlue text-white px-5 py-3 font-semibold rounded-full focus:border-none focus:outline-none uppercase"
+                type="button"
+              >
+                Dùng thử ngay
+              </button>
+            </div>
+          </div>
+
+          <div class="flex-1">
+            <img
+              src="./images/banner_1.png"
+              alt="dozada banner 1"
+              width="825"
+              height="800"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div style="background-color: #f7f7f8">
+        <div class="flex justify-center items-center w-11/12 py-32 mx-auto">
+          <div class="flex-1 flex flex-col items-start">
+            <h3 class="text-60 text-title font-medium w-2/3 leading-tight">
+              Giao diện tối ưu cho
+              <span class="text-yellow-600">Mua hàng</span> và
+              <span class="text-yellow-600">SEO?</span>
+            </h3>
+
+            <h4 class="text-doz-title text-32 font-semibold">
+              Giao diện từ Dozada được thiết kế để đảm bảo:
+            </h4>
+
+            <ul class="text-doz-secondary text-32">
+              <li class="flex items-start">
+                <img
+                  class="inline-block mt-4"
+                  src="./images/tick.svg"
+                  width="20"
+                  height="20"
+                  alt="dozada-tick"
+                />
+
+                <span class="ml-4">Tính thẩm mỹ</span>
+              </li>
+
+              <li class="flex items-start">
+                <img
+                  class="inline-block mt-4"
+                  src="./images/tick.svg"
+                  width="20"
+                  height="20"
+                  alt="dozada-tick"
+                />
+
+                <span class="ml-4">Tối ưu tốc độc load trang</span>
+              </li>
+
+              <li class="flex items-start">
+                <img
+                  class="inline-block mt-4"
+                  src="./images/tick.svg"
+                  width="20"
+                  height="20"
+                  alt="dozada-tick"
+                />
+
+                <span class="ml-4">Chuẩn hoá SEO</span>
+              </li>
+
+              <li class="flex items-start">
+                <img
+                  class="inline-block mt-4"
+                  src="./images/tick.svg"
+                  width="20"
+                  height="20"
+                  alt="dozada-tick"
+                />
+
+                <span class="ml-4"
+                  >Dễ tuỳ chỉnh để đáp ứng yêu cầu của từng khách hàng riêng
+                  biệt</span
+                >
+              </li>
+            </ul>
+
+            <a
+              class="inline-block text-32 font-semibold text-doz-darkBlue mt-4 mb-8"
+              href="#"
+              >Live Demo</a
+            >
+
+            <button
+              class="bg-blue text-26 text-white font-semibold px-10 py-5 rounded-full focus:border-none focus:outline-none uppercase"
+              type="button"
+            >
+              Dùng thử miễn phí
+            </button>
+
+            <p class="text-2xl text-doz-primary italic mt-6">
+              *Hiệu quả ngay trong 14 ngày dùng thử trọn gói miễn phí.
+            </p>
+          </div>
+
+          <div class="flex-1">
+            <img src="./images/banner_2.png" alt="dozada banner 2" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--/ Header -->
+
+    <!-- Main content -->
+    <main class="mt-8">
+      <!-- Product section -->
+      <section>
+        <h2 class="text-center text-70 text-doz-darkBlue my-20 font-semibold">
+          Các sản phẩm của Dozada
+        </h2>
+
+        <section class="flex items-center py-20 w-10/12 mx-auto">
+          <div class="w-1/2 mr-40">
+            <h3 class="text-46 text-doz-darkBlue font-semibold leading-tight">
+              Tối đa chuyển đổi ”Chat” trên Facebook & Messenger thành đơn hàng.
+            </h3>
+
+            <p class="text-32 text-doz-primary my-10">
+              Chatbot có thể sử dụng như một công cụ hiệu quả giúp cho việc chăm
+              sóc khách hàng được thực hiện tự động 24/7.
+            </p>
+
+            <button
+              class="bg-blue text-26 text-white font-semibold px-10 py-5 rounded-full focus:border-none focus:outline-none uppercase"
+              type="button"
+            >
+              Liên hệ tư vấn
+            </button>
+          </div>
+
+          <div class="w-1/2">
+            <img src="./images/product_1.png" alt="dozada product 1" />
+          </div>
+        </section>
+
+        <section class="flex items-center py-20">
+          <div class="flex-1 pl-10">
+            <img src="./images/product_2.png" alt="dozada product 2" />
+          </div>
+
+          <div class="flex-1 pr-24">
+            <h3 class="text-46 text-doz-darkBlue font-semibold leading-tight">
+              Không ngừng cải tiến và xây dựng mới
+            </h3>
+
+            <p class="text-doz-secondary text-32 mt-6 mb-4">
+              Thiết kế theo mô hình micro services, Dozada sẽ giúp bạn :
+            </p>
+            <ul class="text-doz-secondary text-32">
+              <li class="flex items-start">
+                <img
+                  class="inline-block mt-4"
+                  src="./images/tick.svg"
+                  width="20"
+                  height="20"
+                  alt="dozada-tick"
+                />
+
+                <span class="ml-4">Luôn sở hữu tính năng mới nhất</span>
+              </li>
+
+              <li class="flex items-start">
+                <img
+                  class="inline-block mt-4"
+                  src="./images/tick.svg"
+                  width="20"
+                  height="20"
+                  alt="dozada-tick"
+                />
+
+                <span class="ml-4"
+                  >Cài đặt một cách nhanh chóng các tính năng bổ sung
+                </span>
+              </li>
+
+              <li class="flex items-start">
+                <img
+                  class="inline-block mt-4"
+                  src="./images/tick.svg"
+                  width="20"
+                  height="20"
+                  alt="dozada-tick"
+                />
+
+                <span class="ml-4"
+                  >Bên cạnh bán hàng còn vận hành Chấm công, kiểm kê, Bảo trì ,
+                  ...</span
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="flex items-center py-20">
+          <div class="flex-1 pl-10 mr-10">
+            <img src="./images/product_3.png" alt="dozada product 3" />
+          </div>
+
+          <div class="flex-1 pr-24">
+            <p class="text-doz-secondary text-32 mb-4">
+              Thời gian nhận hàng là yếu tố quan trọng hàng đầu trong ecommerce,
+              bằng việc kết hợp các quy trình giao nhận hàng hiện đại :
+            </p>
+            <ul class="text-doz-secondary text-32">
+              <li class="flex items-start">
+                <img
+                  class="inline-block mt-4"
+                  src="./images/tick.svg"
+                  width="20"
+                  height="20"
+                  alt="dozada-tick"
+                />
+
+                <span class="ml-4"
+                  >Kết hợp các quy trình giao nhận hàng hiện đại như Click and
+                  Collect</span
+                >
+              </li>
+
+              <li class="flex items-start">
+                <img
+                  class="inline-block mt-4"
+                  src="./images/tick.svg"
+                  width="20"
+                  height="20"
+                  alt="dozada-tick"
+                />
+
+                <span class="ml-4"
+                  >Vận chuyển từ cửa hàng cùng với các đối tác giao hàng ngay
+                  lập tức như Ahamove, Dozada...
+                </span>
+              </li>
+
+              <li class="flex items-start">
+                <img
+                  class="inline-block mt-4"
+                  src="./images/tick.svg"
+                  width="20"
+                  height="20"
+                  alt="dozada-tick"
+                />
+
+                <span class="ml-4"
+                  >Rút ngắn thời gian giao hàng từ 2-5 ngày xuống chỉ còn 30
+                  phút.</span
+                >
+              </li>
+            </ul>
+
+            <div class="flex my-8">
+              <img
+                class="mr-6"
+                src="./images/brand_aha.png"
+                alt="brand aha"
+                width="92"
+                height="92"
+              />
+              <img
+                src="./images/brand_dozada.png"
+                alt="brand dozada"
+                width="92"
+                height="92"
+              />
+            </div>
+
+            <button
+              class="bg-blue text-26 text-white font-semibold px-10 py-5 rounded-full focus:border-none focus:outline-none uppercase"
+              type="button"
+            >
+              Bắt đầu ngay
+            </button>
+          </div>
+        </section>
+
+        <section class="flex items-center py-20">
+          <div
+            style="border-radius: 0px 46px 46px 0px"
+            class="flex-1 bg-gray-100"
+          >
+            <img src="./images/product_4.png" alt="dozada product 4" />
+          </div>
+
+          <div class="flex-1 ml-32 pr-32">
+            <h3 class="text-46 text-doz-darkBlue font-semibold leading-tight">
+              Quản lý tập trung với nền tảng Omnichannel - Bán hàng đa kênh.
+            </h3>
+
+            <p class="text-32 text-doz-primary my-10">
+              Tối đa hiệu quả kinh doanh và tạo trải nghiệm cá nhân hoá cho
+              khách hàng ở đa kênh bán Online và Offline: từ website, Social,
+              sàn thương mại điện tử đến chuỗi cửa hàng. Quản lý dễ dàng mọi
+              lúc, mọi nơi vì tất cả chỉ trên cùng một hệ thống.
+            </p>
+
+            <button
+              class="bg-blue text-26 text-white font-semibold px-10 py-5 rounded-full focus:border-none focus:outline-none uppercase"
+              type="button"
+            >
+               Dùng thử miễn phí
+            </button>
+
+            <p class="text-2xl text-doz-primary italic mt-6">
+              *Hiệu quả ngay trong 14 ngày dùng thử trọn gói miễn phí.
+            </p>
+          </div>
+        </section>
+
+        <section class="flex items-center py-20 w-10/12 mx-auto">
+          <div class="flex-1 pr-24">
+            <h3 class="text-46 text-doz-darkBlue font-semibold leading-tight">
+              Tiếp tục sử dụng các công cụ quen thuộc
+            </h3>
+
+            <p class="text-doz-secondary text-32 mt-5 mb-4">
+              Hệ thống kết hợp của Dozada giúp bạn hoàn toàn có thể tiếp tục sử
+              dụng các công cụ quen thuộc của mình:
+            </p>
+
+            <ul class="text-doz-secondary text-32">
+              <li class="flex items-start">
+                <img
+                  class="inline-block mt-4"
+                  src="./images/tick.svg"
+                  width="20"
+                  height="20"
+                  alt="dozada-tick"
+                />
+
+                <span class="ml-4">CRM (Saleforce,...)</span>
+              </li>
+
+              <li class="flex items-start">
+                <img
+                  class="inline-block mt-4"
+                  src="./images/tick.svg"
+                  width="20"
+                  height="20"
+                  alt="dozada-tick"
+                />
+
+                <span class="ml-4">Warehouse, CMS (Wordpress,..) </span>
+              </li>
+
+              <li class="flex items-start">
+                <img
+                  class="inline-block mt-4"
+                  src="./images/tick.svg"
+                  width="20"
+                  height="20"
+                  alt="dozada-tick"
+                />
+
+                <span class="ml-4"
+                  >Và còn nhiều ERP khác mà không gặp bất cứ trở ngại gì.</span
+                >
+              </li>
+            </ul>
+
+            <div class="flex my-8">
+              <img
+                class="mr-6"
+                src="./images/brand_advanced.png"
+                alt="brand aha"
+                width="92"
+                height="92"
+              />
+              <img
+                class="mr-6"
+                src="./images/brand_sage.png"
+                alt="brand dozada"
+                width="92"
+                height="92"
+              />
+              <img
+                class="mr-6"
+                src="./images/brand_oracle.png"
+                alt="brand dozada"
+                width="92"
+                height="92"
+              />
+              <img
+                src="./images/brand_northgate.png"
+                alt="brand dozada"
+                width="92"
+                height="92"
+              />
+            </div>
+          </div>
+
+          <div class="flex-1 pl-10 mr-10">
+            <img src="./images/product_5.png" alt="dozada product 3" />
+          </div>
+        </section>
+      </section>
+      <!--/ product section -->
+
+      <!-- Client section -->
+      <section style="background-color: #f3faff" class="py-20">
+        <section class="w-3/5 mx-auto">
+          <h3
+            class="text-center text-46 text-doz-darkBlue font-medium leading-tight"
+          >
+            Đối tác của chúng tôi
+          </h3>
+
+          <p class="text-center text-32 my-5">
+            Hơn 500 doanh nghiệp tin dùng Dozada
+          </p>
+
+          <ul class="flex justify-between items-center mt-12 mb-8">
+            <li>
+              <img
+                class="object-contain"
+                src="./images/client_1.png"
+                alt="dozada client 1"
+              />
+            </li>
+            <li>
+              <img
+                class="object-contain"
+                src="./images/client_2.png"
+                alt="dozada client 2"
+              />
+            </li>
+            <li>
+              <img
+                class="object-contain"
+                src="./images/client_3.png"
+                alt="dozada client 3"
+              />
+            </li>
+            <li>
+              <img
+                class="object-contain"
+                src="./images/client_4.png"
+                alt="dozada client 4"
+              />
+            </li>
+          </ul>
+
+          <div
+            class="w-11/12 mx-auto text-white bg-darkBlue py-16 px-32"
+            style="border-radius: 20px"
+          >
+            <span class="flex text-70">
+              <img
+                class="mr-1"
+                class="inline-block"
+                src="./images/comma.svg"
+                alt="comma"
+              />
+              <img class="inline-block" src="./images/comma.svg" alt="comma" />
+            </span>
+
+            <p class="text-25 mt-8">
+              Dozada là một sản phẩm micro services được tạo ra để đáp ứng nhu
+              cầu sở hữu hệ thống omnichannel thiết kế riêng biệt của từng chuỗi
+              bán lẻ.
+            </p>
+          </div>
+        </section>
+      </section>
+      <!--/ Client section -->
+
+      <!-- Tech news section -->
+      <section style="background-color: #f7f7f8">
+        <section class="w-3/5 mx-auto py-24">
+          <h3
+            class="text-center text-46 text-doz-darkBlue font-bold leading-tight mb-16"
+          >
+            Bản tin Công Nghệ
+          </h3>
+
+          <ul class="grid grid-cols-3 gap-6">
+            <li>
+              <div
+                style="border-radius: 10px"
+                class="max-w-sm text-center shadow-lg p-2 pb-6"
+              >
+                <div
+                  style="border-radius: 10px; height: 257px"
+                  class="overflow-hidden"
+                >
+                  <img
+                    class="w-full"
+                    src="./images/tech_1.png"
+                    alt="dozada tech"
+                    width="357"
+                    height="257"
+                  />
+                </div>
+                <div class="px-2 py-4">
+                  <h3 class="text-doz-title text-xl font-semibold my-5">
+                    Y tế / Sức khoẻ
+                  </h3>
+                  <p class="text-doz-primary text-sm">
+                    VISIQ là một hệ thống máy siêu âm bảng chuyển đổi, cho phép
+                    bác sĩ thực hiện các chẩn đoán....
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div
+                style="border-radius: 10px"
+                class="max-w-sm text-center shadow-lg p-2 pb-6"
+              >
+                <div
+                  style="border-radius: 10px; height: 257px"
+                  class="overflow-hidden"
+                >
+                  <img
+                    class="w-full"
+                    src="./images/tech_2.png"
+                    alt="dozada tech"
+                    width="357"
+                    height="257"
+                  />
+                </div>
+                <div class="px-2 py-4">
+                  <h3 class="text-doz-title text-xl font-semibold my-5">
+                    Công nghệ
+                  </h3>
+                  <p class="text-doz-primary text-sm">
+                    Điều gì sẽ xảy ra nếu giáo viên toàn cầu được thay bằng AI?
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div
+                style="border-radius: 10px"
+                class="max-w-sm text-center shadow-lg p-2 pb-6"
+              >
+                <div
+                  style="border-radius: 10px; height: 257px"
+                  class="overflow-hidden"
+                >
+                  <img
+                    class="w-full"
+                    src="./images/tech_3.png"
+                    alt="dozada tech"
+                    width="357"
+                    height="257"
+                  />
+                </div>
+                <div class="px-2 py-4">
+                  <h3 class="text-doz-title text-xl font-semibold my-5">
+                    An ninh
+                  </h3>
+                  <p class="text-doz-primary text-sm">
+                    Tăng cường đảm bảo an toàn các hệ thống thông tin dịp Quốc
+                    khánh 2/9
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="mt-16 flex justify-center items-center">
+            <div>
+              <span
+                class="inline-block cursor-pointer w-3 h-3 rounded-full bg-darkBlue opacity-25 mr-1"
+              ></span>
+              <span
+                class="inline-block cursor-pointer w-3 h-3 rounded-full bg-darkBlue mr-1"
+              ></span>
+              <span
+                class="inline-block cursor-pointer w-3 h-3 rounded-full bg-darkBlue opacity-25 mr-1"
+              ></span>
+              <span
+                class="inline-block cursor-pointer w-3 h-3 rounded-full bg-darkBlue opacity-25 mr-1"
+              ></span>
+              <span
+                class="inline-block cursor-pointer w-3 h-3 rounded-full bg-darkBlue opacity-25 mr-1"
+              ></span>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!--/ Tech news section -->
+
+      <!-- Newsletter section -->
+      <section class="newsletter bg-white">
+        <section
+          style="border-radius: 20px"
+          class="newsletter-wrap relative overflow-hidden bg-darkBlue w-1/2 mx-auto my-16 py-16 font-semibold"
+        >
+          <div class="w-3/5 mx-auto text-center">
+            <h3 class="text-white text-3xl mb-16">
+              Nhận thêm tin tức về chúng tôi
+            </h3>
+            <form class="flex bg-white rounded-full p-1 pl-6">
+              <input
+                style="color: #2e353a"
+                class="flex-1 text-xl pr-4 rounded-full focus:outline-none"
+                type="text"
+                placeholder="Để lại mail ở đây"
+              />
+              <button
+                class="bg-lighterBlue text-white text-22 font-bold py-2 px-16 rounded-full"
+                type="submit"
+              >
+                Gửi
+              </button>
+            </form>
+          </div>
+        </section>
+      </section>
+      <!--/ Newsletter section -->
+    </main>
+    <!--/ Main content -->
+
+    <!-- Footer -->
+    <footer class="bg-darkestBlue">
+      <div class="w-10/12 mx-auto text-white">
+        <div class="flex py-6">
+          <div class="flex-1 flex justify-between mt-32">
+            <div class="mb-8">
+              <div class="mb-8">
+                <img src="./images/logo.svg" alt="dozada">
+              </div>
+  
+              <ul>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">Ecommerce</a>
+                </li>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">Quản lý dự án xây dựng</a>
+                </li>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">API Platform</a>
+                </li>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">Gỉai pháp Ecommerce</a>
+                </li>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">Giải pháp Quản lý dự án xây dựng</a>
+                </li>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">Google Smart Shopping</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-16">
+              <h4 class="text-26 font-bold mb-6">Dịch vụ hỗ trợ</h4>
+
+              <ul>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">Đăng kí tên miền</a>
+                </li>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">Email Doanh nghiệp</a>
+                </li>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">Dịch vụ chiến lược nội dung</a>
+                </li>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">Dịch vụ chăm sóc nội dung</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-16">
+              <h4 class="text-26 font-bold mb-6">Kênh bán hàng</h4>
+
+              <ul>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">Bán hàng tại cửa hàng</a>
+                </li>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">Bán hàng trên website</a>
+                </li>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">Bán hàng trên Facebook</a>
+                </li>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">Bán hàng trên Lazada</a>
+                </li>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">Bán hàng đa kênh Omnichannel</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-16">
+              <h4 class="text-26 font-bold mb-6">Quản lí bán hàng</h4>
+
+              <ul>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">Cửa hàng thời trang</a>
+                </li>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">Cửa hàng tạp hoá</a>
+                </li>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">Siêu thị mini</a>
+                </li>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">Cửa hàng mỹ phẩm</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-16">
+              <h4 class="text-26 font-bold mb-6">Trợ giúp</h4>
+
+              <ul>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">Trung tâm trợ giúp</a>
+                </li>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">Tài liệu nhà phát triển</a>
+                </li>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">Hình thức thanh toán SEO web</a>
+                </li>
+                <li>
+                  <a class="inline-block text-xl my-2" href="./">Chính sách bảo mật</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div style="color: #2F2F4F;" class="hozizontal"></div>
+
+        <div class="flex justify-between items-center py-6">
+          <div class="flex-1 text-18">
+            <h3 class="text-26 mb-4 font-bold">Trụ sở chính</h3>
+            <p class="mb-4">
+              141 Võ Oanh, Phường 25, Quận Bình Thạnh, Thành phố Hồ Chí Minh
+            </p>
+            <p class="mb-4">Tổng đài hỗ trợ:</p>
+            <p class="mb-4">Số hỗ trợ ngoài giờ:</p>
+            <p>Email: dozada@gmail.com</p>
+          </div>
+
+          <div class="flex-1 text-26 text-center">
+            <h3 class="font-bold mb-16">Theo dõi</h3>
+
+            <ul class="flex justify-center items-center">
+              <li>
+                <a class="flex justify-center items-center w-12 h-12 mr-3 bg-lightBlue" href="./" target="_blank">
+                  <svg
+                  width="21"
+                  height="11"
+                  viewBox="0 0 21 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.4845 9.71655C20.4642 9.67881 20.4419 9.64209 20.4177 9.60655C19.8694 8.80671 19.1929 8.09515 18.4131 7.49822L18.4036 7.47072H18.3941L18.375 7.45239C17.9263 7.06739 17.64 6.81072 17.5159 6.66405C17.3059 6.41655 17.2581 6.15072 17.3727 5.89405C17.4586 5.69239 17.7736 5.27989 18.3177 4.63822L18.9954 3.83155C20.1981 2.36489 20.7231 1.42989 20.5609 1.01739L20.5036 0.925721C20.4559 0.870721 20.3509 0.815721 20.1791 0.769888C19.9603 0.719249 19.7334 0.709909 19.5109 0.742388L16.4945 0.760721C16.4257 0.743234 16.3533 0.743234 16.2845 0.760721L16.1509 0.797388L16.1031 0.815721L16.0554 0.852388C16.0123 0.876732 15.9736 0.907698 15.9409 0.944054C15.8999 0.99705 15.8677 1.0558 15.8454 1.11822C15.5291 1.86048 15.1525 2.5777 14.7191 3.26322C14.4613 3.65739 14.2227 3.99655 14.0031 4.28989C13.8406 4.51788 13.6586 4.73251 13.4591 4.93155C13.3368 5.05019 13.206 5.16046 13.0677 5.26155C12.9436 5.35322 12.8577 5.38072 12.7909 5.37155C12.7335 5.35993 12.6762 5.34771 12.6191 5.33489C12.5192 5.27683 12.4369 5.19465 12.3804 5.09655C12.3149 4.98313 12.2727 4.85864 12.2563 4.72989C12.2399 4.59905 12.2303 4.46749 12.2277 4.33572C12.223 4.18298 12.223 4.03013 12.2277 3.87739L12.2372 3.47405C12.2372 3.23572 12.2372 2.96989 12.2563 2.68572L12.285 2.01655V1.48489C12.285 1.30155 12.285 1.15489 12.2563 1.05405C12.23 0.949425 12.1916 0.847957 12.1418 0.751554C12.0971 0.656794 12.024 0.576999 11.9318 0.522388C11.8216 0.462558 11.7025 0.419279 11.5786 0.394054C11.1133 0.306513 10.64 0.263525 10.1659 0.265721C9.3247 0.2011 8.47824 0.278664 7.66496 0.494888C7.52178 0.568221 7.38815 0.659888 7.2736 0.779054C7.14951 0.925721 7.13042 0.999054 7.21633 1.00822C7.63633 1.07239 7.93224 1.20072 8.1136 1.42072L8.17087 1.53989C8.30385 1.9066 8.38413 2.28901 8.40951 2.67655C8.47495 3.33453 8.44281 3.99809 8.31405 4.64739C8.29129 4.80342 8.24296 4.95502 8.17087 5.09655C8.13394 5.1662 8.09249 5.23356 8.04678 5.29822C8.03253 5.32068 8.01289 5.33953 7.98951 5.35322C7.89765 5.38472 7.80068 5.40024 7.70315 5.39905C7.57735 5.38541 7.45818 5.33772 7.35951 5.26155C7.19857 5.15642 7.05118 5.03334 6.92042 4.89489C6.73344 4.69167 6.56423 4.47399 6.41451 4.24405C6.20289 3.9207 6.00855 3.58721 5.83224 3.24489L5.66042 2.96989C5.33173 2.393 5.02917 1.80272 4.7536 1.20072C4.70508 1.07786 4.61845 0.972274 4.50542 0.898221L4.44815 0.870721C4.39843 0.833526 4.34388 0.802711 4.28587 0.779054C4.20553 0.751918 4.12229 0.733471 4.03769 0.724054L1.17406 0.742388C0.887692 0.742388 0.687237 0.806554 0.582237 0.925721L0.53451 0.980721C0.510279 1.02917 0.500373 1.08307 0.505873 1.13655C0.505873 1.20072 0.524964 1.29239 0.572692 1.39322C1.57718 3.54434 2.8359 5.57742 4.32406 7.45239C4.65392 7.84853 4.99776 8.23375 5.35496 8.60739L5.62224 8.83655C5.78451 8.99239 6.03269 9.17572 6.35724 9.38655C6.70754 9.61159 7.06739 9.8226 7.43587 10.0191C8.32981 10.4703 9.32797 10.6973 10.3377 10.6791H11.5404C11.7452 10.6744 11.9416 10.5996 12.0941 10.4682L12.1322 10.4224C12.1702 10.369 12.1992 10.3103 12.2181 10.2482C12.2372 10.1657 12.2468 10.0832 12.2468 9.98239C12.2376 9.73624 12.26 9.48993 12.3136 9.24905C12.3709 9.01989 12.4281 8.85489 12.5045 8.74489C12.5991 8.57704 12.7331 8.43267 12.8959 8.32322C12.927 8.31191 12.9589 8.30272 12.9913 8.29572C13.1536 8.24072 13.3445 8.29572 13.5736 8.44239C13.8027 8.58905 14.0127 8.77239 14.2131 8.99239C14.4041 9.21239 14.6522 9.45989 14.9291 9.73489C15.2154 10.0099 15.4541 10.2116 15.6641 10.3491L15.8741 10.4591C16.0077 10.5416 16.1891 10.6057 16.4181 10.6699C16.6377 10.7341 16.8286 10.7616 16.9909 10.7249L19.6731 10.6791C19.9404 10.6791 20.1504 10.6424 20.2936 10.5599C20.4368 10.4866 20.5227 10.3949 20.5513 10.3032C20.5785 10.1948 20.5785 10.0817 20.5513 9.97322C20.5387 9.8886 20.5163 9.80559 20.4845 9.72572V9.71655Z"
+                    fill="white"
+                  />
+                </svg></a>
+              </li>
+              <li>
+                <a class="flex justify-center items-center w-12 h-12 mr-3 bg-lightBlue" href="./" target="_blank"
+                  ><svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 10 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.63634 0.387207H7.38179C4.85452 0.387207 3.21816 2.03421 3.21816 4.59021V6.52521H0.954521C0.862044 6.52518 0.773215 6.56092 0.70698 6.62481C0.640745 6.6887 0.602347 6.77569 0.599976 6.86721V9.67521C0.599976 9.86421 0.763612 10.0262 0.963612 10.0262H3.21816V17.1002C3.21816 17.2892 3.38179 17.4512 3.58179 17.4512H6.52725C6.62055 17.4489 6.7094 17.4112 6.7754 17.3459C6.8414 17.2805 6.87949 17.1926 6.88179 17.1002V10.0262H9.51816C9.6146 10.0262 9.70709 9.98828 9.77529 9.92077C9.84348 9.85325 9.88179 9.76169 9.88179 9.66621V6.87621C9.88304 6.82859 9.87449 6.78123 9.85666 6.73699C9.83883 6.69275 9.81209 6.65257 9.77807 6.6189C9.74405 6.58522 9.70346 6.55874 9.65878 6.54109C9.6141 6.52344 9.56625 6.51497 9.51816 6.51621H6.88179V4.87821C6.88179 4.09521 7.06361 3.69021 8.11816 3.69021H9.63634C9.72879 3.68786 9.81665 3.64985 9.88119 3.58427C9.94572 3.5187 9.98182 3.43076 9.98179 3.33921V0.729207C9.97949 0.639221 9.94236 0.55355 9.87806 0.4899C9.81377 0.42625 9.72724 0.389486 9.63634 0.387207Z"
+                      fill="white"
+                    /></svg></a>
+              </li>
+              <li>
+                <a class="flex justify-center items-center w-12 h-12 bg-lightBlue" href="./" target="_blank">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.19 5.79004H0.58C0.540227 5.78864 0.500592 5.79545 0.463563 5.81003C0.426533 5.82461 0.392901 5.84666 0.36476 5.8748C0.336619 5.90294 0.314572 5.93657 0.29999 5.9736C0.285408 6.01063 0.278603 6.05027 0.28 6.09004V17.69C0.28 17.85 0.42 17.98 0.58 17.98H4.19C4.35 17.98 4.48 17.85 4.48 17.69V6.09004C4.48134 6.05112 4.47483 6.01234 4.46086 5.97599C4.44689 5.93964 4.42574 5.90648 4.39868 5.87848C4.37162 5.85049 4.33919 5.82823 4.30334 5.81303C4.26749 5.79784 4.22894 5.79002 4.19 5.79004ZM2.38 0.0200405C1.7496 0.0226727 1.14576 0.274267 0.699994 0.720034C0.254227 1.1658 0.0026322 1.76964 0 2.40004C0.0026322 3.03045 0.254227 3.63428 0.699994 4.08005C1.14576 4.52581 1.7496 4.77741 2.38 4.78004C2.69339 4.78136 3.00395 4.72077 3.29386 4.60175C3.58377 4.48274 3.84732 4.30763 4.06938 4.0865C4.29145 3.86537 4.46765 3.60255 4.58788 3.31314C4.70811 3.02373 4.77 2.71343 4.77 2.40004C4.77 2.08665 4.70811 1.77635 4.58788 1.48694C4.46765 1.19753 4.29145 0.934716 4.06938 0.713581C3.84732 0.492446 3.58377 0.317346 3.29386 0.198329C3.00395 0.0793125 2.69339 0.0187238 2.38 0.0200405ZM13.38 5.50004C11.93 5.50004 10.86 6.13004 10.21 6.83004V6.08004C10.21 6.0411 10.2022 6.00256 10.187 5.9667C10.1718 5.93085 10.1496 5.89843 10.1216 5.87136C10.0936 5.8443 10.0604 5.82315 10.0241 5.80918C9.98771 5.79521 9.94892 5.7887 9.91 5.79004H6.46C6.42023 5.78864 6.38059 5.79545 6.34356 5.81003C6.30653 5.82461 6.2729 5.84666 6.24476 5.8748C6.21662 5.90294 6.19457 5.93657 6.17999 5.9736C6.16541 6.01063 6.1586 6.05027 6.16 6.09004V17.69C6.16 17.85 6.29 17.98 6.46 17.98H10.06C10.1379 17.9801 10.2127 17.9499 10.2687 17.8957C10.3247 17.8416 10.3574 17.7679 10.36 17.69V11.95C10.36 10.01 10.88 9.25004 12.23 9.25004C13.7 9.25004 13.81 10.47 13.81 12.05V17.69C13.81 17.85 13.94 17.98 14.11 17.98H17.71C17.87 17.98 18 17.85 18 17.69V11.32C18 8.44004 17.45 5.50004 13.38 5.50004Z"
+                      fill="white"
+                    /></svg></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex-1">
+            <div class="pr-24">
+              <form class="flex bg-white rounded-full p-1 pl-6">
+                <input
+                  style="color: #2e353a"
+                  class="flex-1 text-xl pr-4 rounded-full focus:outline-none"
+                  type="text"
+                  placeholder="Để lại mail ở đây"
+                />
+                <button
+                  class="bg-lightBlue text-white text-22 font-bold py-2 px-8 rounded-full"
+                  type="submit"
+                >
+                  Gửi
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div style="color: #2F2F4F;" class="hozizontal"></div>
+
+        <div class="text-xl text-center text-white p-10">
+          <span>&copy; Copyright 2020. All rights reserved bt Dozada.</span>
+        </div>
+      </div>
+    </footer>
+    <!--/ Footer -->
+  </body>
+</html>
