@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dozada</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -12,22 +12,22 @@
       <div id="nav-hamburger" class="hamburger md:hidden block"></div>
 
       <!-- Mobile nav -->
-      <div class="hidden fixed inset-0">
-        <div id="nav-overlay" class="absolute inset-0 bg-black opacity-75"></div>
+      <div id="mobile-nav" class="md:hidden invisible fixed inset-0">
+        <div id="mobile-nav__overlay" class="absolute inset-0 bg-black"></div>
 
-        <div class="absolute top-0 right-0 w-3/4 h-full bg-white text-doz-dark">
+        <div id="mobile-nav__content" class="absolute top-0 w-full max-w-xs h-full bg-white text-doz-dark">
           <div class="w-10/12 mx-auto">
             <div>
               <div class="h-20 flex justify-between items-center">
                 <div class="w-16">
                   <img src="./images/logo.svg" alt="dozada">
                 </div>
-                <div class="flex justify-center items-center text-32">&times;</div>
+                <div id="mobile-nav__close" class="flex justify-center items-center text-32">&times;</div>
               </div>
               <div style="color: #09092E;" class="hozizontal"></div>
             </div>
 
-            <ul>
+            <ul class="mt-3">
               <li><a class="block py-4" href="./tinh-nang"> Tính năng </a></li>
   
               <li><a class="block py-4" href="./giao-dien">Giao diện</a></li>
@@ -1161,5 +1161,10 @@
   </div>
 </footer>
 <!--/ Footer -->
+
+<!-- Scripts -->
+  <script src="./js/bundles/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
+<!--/ Scripts -->
   </body>
 </html>

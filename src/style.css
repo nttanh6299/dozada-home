@@ -67,8 +67,8 @@ html {
   height: 14px;
 
   position: absolute;
-  top: 4%;
-  right: 4%;
+  top: 5%;
+  right: 5%;
 }
 
 .hamburger::before, .hamburger::after {
@@ -113,4 +113,30 @@ input[name="collapse"]:checked ~ label .arrow {
   transform: rotate(180deg);
 
   color: #fff;
+}
+
+#mobile-nav {
+  z-index: 1000;
+
+  transition: 0.3s;
+}
+
+#mobile-nav > #mobile-nav__overlay {
+  opacity: 0;
+
+  transition: opacity 0.2s ease-out;
+}
+
+#mobile-nav > #mobile-nav__content {
+  right: -100%;
+
+  transition: right 0.3s ease-out;
+}
+
+#mobile-nav.active > #mobile-nav__overlay {
+  opacity: 0.7;
+}
+
+#mobile-nav.active > #mobile-nav__content {
+  right: 0;
 }
