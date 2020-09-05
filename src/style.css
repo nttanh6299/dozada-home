@@ -26,6 +26,19 @@ html {
   border-top: 1px solid currentColor;
 }
 
+.focus-none:focus {
+  border:none;
+  outline: none;
+}
+
+.doz-btn-transition:hover {
+  transition: all 0.1s ease-in-out;
+
+  background-color: var(--btnHover);
+  color: #fff;
+}
+
+/********** NEWSLETTER SECTION **********/
 .newsletter-wrap::before, .newsletter-wrap::after {
   content: "";
 
@@ -50,18 +63,7 @@ html {
   right: -10%;
 }
 
-.focus-none:focus {
-  border:none;
-  outline: none;
-}
-
-.doz-btn-transition:hover {
-  transition: all 0.1s ease-in-out;
-
-  background-color: var(--btnHover);
-  color: #fff;
-}
-
+/********** HAMBURGER BUTTON **********/
 .hamburger {
   width: 21px;
   height: 14px;
@@ -90,6 +92,7 @@ html {
   bottom: 0;
 }
 
+/********** TOGGLE FOOTER MENU **********/
 input[name="collapse"]:checked ~ label {
   background-color: rgba(255, 255, 255, 0.05);
 }
@@ -115,6 +118,7 @@ input[name="collapse"]:checked ~ label .arrow {
   color: #fff;
 }
 
+/********** MOBILE NAVBAR **********/
 #mobile-nav {
   z-index: 1000;
 
@@ -139,4 +143,53 @@ input[name="collapse"]:checked ~ label .arrow {
 
 #mobile-nav.active > #mobile-nav__content {
   right: 0;
+}
+
+/********** SLIDER **********/
+.slider {
+  max-width: 400px;
+  margin: 0px auto 30px auto;
+}
+
+.slide-viewer {
+  position: relative; /* needed for IE7 */
+  overflow: hidden;
+  height: 530px;
+}
+
+.slide-group {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+
+  padding: 8px;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+
+/********** SLIDER BUTTONS **********/
+.slide-buttons {
+  text-align: center;
+}
+
+.slide-btn {
+  @apply inline-block w-4 h-4 rounded-full bg-darkBlue opacity-25;
+}
+
+.slide-btn + .slide-btn {
+  margin-left: 18px;
+}
+
+.slide-btn.active, .slide-btn:hover {
+  opacity: 1;
 }
