@@ -89,3 +89,28 @@ html {
 .hamburger::after {
   bottom: 0;
 }
+
+input[name="collapse"]:checked ~ label {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+input[name="collapse"] ~ .collapse-menu {
+  max-height: 0;
+  overflow: hidden;
+}
+
+input[name="collapse"]:checked ~ .collapse-menu {
+  max-height: 1000px;
+
+  transition: max-height 1s linear;
+}
+
+input[name="collapse"] ~ label .arrow {
+  transition: transform 0.3s;
+}
+
+input[name="collapse"]:checked ~ label .arrow {
+  transform: rotate(180deg);
+
+  color: #fff;
+}

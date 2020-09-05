@@ -9,7 +9,55 @@
   <body>
     <!-- Navbar -->
     <nav class="lg:h-24 h-20 flex items-center">
-      <div class="hamburger md:hidden block"></div>
+      <div id="nav-hamburger" class="hamburger md:hidden block"></div>
+
+      <!-- Mobile nav -->
+      <div class="hidden fixed inset-0">
+        <div id="nav-overlay" class="absolute inset-0 bg-black opacity-75"></div>
+
+        <div class="absolute top-0 right-0 w-3/4 h-full bg-white text-doz-dark">
+          <div class="w-10/12 mx-auto">
+            <div>
+              <div class="h-20 flex justify-between items-center">
+                <div class="w-16">
+                  <img src="./images/logo.svg" alt="dozada">
+                </div>
+                <div class="flex justify-center items-center text-32">&times;</div>
+              </div>
+              <div style="color: #09092E;" class="hozizontal"></div>
+            </div>
+
+            <ul>
+              <li><a class="block py-4" href="./tinh-nang"> Tính năng </a></li>
+  
+              <li><a class="block py-4" href="./giao-dien">Giao diện</a></li>
+      
+              <li><a class="block py-4" href="./dich-vu">Dịch vụ</a></li>
+      
+              <li><a class="block py-4" href="./tai-lieu">Tài liệu</a></li>
+            </ul>
+
+            <div class="flex justify-between items-center mt-6">
+              <div class="w-16 p-1 rounded border border-gray-800">
+                <img src="./images/vn_flag.png" alt="dozada vn flag">
+              </div>
+
+              <div class="w-16 p-1">
+                <img src="./images/en_flag.png" alt="dozada en flag">
+              </div>
+            </div>
+
+            <div class="mt-6">
+              <a href="./"
+              class="block  text-center bg-darkBlue text-white px-8 py-2 rounded-full focus-none"
+              >
+                Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/ Mobile nav -->
 
       <div class="flex justify-between lg:w-11/12 w-full bg-white mx-auto text-doz-dark lg:px-0 px-4 xl:text-2xl lg:text-xl text-md">
         <div class="xl:w-24 lg:w-20 w-16">
@@ -145,7 +193,7 @@
       </div>
     
       <div class="md:bg-gray-100 bg-white">
-        <div class="flex md:flex-row flex-col justify-center items-center md:w-11/12 w-10/12 md:py-32 py-4 mx-auto">
+        <div class="flex md:flex-row flex-col md:justify-center md:items-center md:w-11/12 w-10/12 md:py-32 py-4 mx-auto">
           <div class="flex-1 md:order-1 order-2 flex flex-col items-start">
             <h3 class="xl:text-60 lg:text-32 md:text-26 text-2xl lg:tex text-doz-title font-medium w-4/5 leading-tight">
               Giao diện tối ưu cho
@@ -266,7 +314,7 @@
       </div>
     </section>
 
-    <section class="flex md:flex-row flex-col items-center md:w-full w-10/12 mx-auto lg:py-20 md:py-12 py-4">
+    <section class="flex md:flex-row flex-col md:items-center md:w-full w-10/12 mx-auto lg:py-20 md:py-12 py-4">
       <div class="flex-1 md:pl-10 pl-0">
         <img src="./images/product_2.png" alt="dozada product 2" />
       </div>
@@ -748,8 +796,168 @@
 <!-- Footer -->
 <footer class="bg-darkestBlue">
   <div class="w-10/12 mx-auto text-white">
-    <div class="flex py-6">
-      <div class="flex-1 grid xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 gap-1 xl:mt-32 lg:mt-24 md:mt-16 mt-8">
+    <div class="flex md:py-6 pt-6 pb-2">
+      <!-- Collapsible menu -->
+      <div class="flex-1 md:hidden grid gap-3 mt-8">
+        <div class="text-sm">
+          <input class="hidden" type="radio" name="collapse" id="collapse1">
+
+          <label class="flex justify-between items-center p-4" for="collapse1">
+            <div class="w-24">
+              <img src="./images/logo.svg" alt="dozada">
+            </div>
+            <span class="arrow inline-block text-doz-title">
+              <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.07492 3L9.79972 7L14.5245 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </label>
+
+          <ul class="collapse-menu text-white pl-4">
+            <li>
+              <a class="inline-block my-2" href="./">Ecommerce</a>
+            </li>
+            <li>
+              <a class="inline-block my-2" href="./">Quản lý dự án xây dựng</a>
+            </li>
+            <li>
+              <a class="inline-block my-2" href="./">API Platform</a>
+            </li>
+            <li>
+              <a class="inline-block my-2" href="./">Gỉai pháp Ecommerce</a>
+            </li>
+            <li>
+              <a class="inline-block my-2" href="./">Giải pháp Quản lý dự án xây dựng</a>
+            </li>
+            <li>
+              <a class="inline-block my-2" href="./">Google Smart Shopping</a>
+            </li>
+          </ul>
+        </div>
+
+        <div style="color: #2F2F4F;"  class="text-sm border-t border-current">
+          <input class="hidden" type="radio" name="collapse" id="collapse2">
+
+          <label class="flex justify-between items-center p-4" for="collapse2">
+            <h4 class="text-base font-bold text-white">Dịch vụ hỗ trợ</h4>
+
+            <span class="arrow inline-block text-doz-title">
+              <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.07492 3L9.79972 7L14.5245 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </label>
+
+          <ul class="collapse-menu text-white pl-4">
+            <li>
+              <a class="inline-block my-2" href="./">Đăng kí tên miền</a>
+            </li>
+            <li>
+              <a class="inline-block my-2" href="./">Email Doanh nghiệp</a>
+            </li>
+            <li>
+              <a class="inline-block my-2" href="./">Dịch vụ chiến lược nội dung</a>
+            </li>
+            <li>
+              <a class="inline-block my-2" href="./">Dịch vụ chăm sóc nội dung</a>
+            </li>
+          </ul>
+        </div>
+
+        <div style="color: #2F2F4F;"  class="text-sm border-t border-current">
+          <input class="hidden" type="radio" name="collapse" id="collapse3">
+
+          <label class="flex justify-between items-center p-4" for="collapse3">
+            <h4 class="text-base font-bold text-white">Kênh bán hàng</h4>
+
+            <span class="arrow inline-block text-doz-title">
+              <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.07492 3L9.79972 7L14.5245 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </label>
+
+          <ul class="collapse-menu text-white pl-4">
+            <li>
+              <a class="inline-block my-2" href="./">Bán hàng tại cửa hàng</a>
+            </li>
+            <li>
+              <a class="inline-block my-2" href="./">Bán hàng trên website</a>
+            </li>
+            <li>
+              <a class="inline-block my-2" href="./">Bán hàng trên Facebook</a>
+            </li>
+            <li>
+              <a class="inline-block my-2" href="./">Bán hàng trên Lazada</a>
+            </li>
+            <li>
+              <a class="inline-block my-2" href="./">Bán hàng đa kênh Omnichannel</a>
+            </li>
+          </ul>
+        </div>
+
+        <div style="color: #2F2F4F;"  class="text-sm border-t border-current">
+          <input class="hidden" type="radio" name="collapse" id="collapse4">
+
+          <label class="flex justify-between items-center p-4" for="collapse4">
+            <h4 class="text-base font-bold text-white">Quản lí bán hàng</h4>
+
+            <span class="arrow inline-block text-doz-title">
+              <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.07492 3L9.79972 7L14.5245 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </label>
+
+          <ul class="collapse-menu text-white pl-4">
+            <li>
+              <a class="inline-block my-2" href="./">Cửa hàng thời trang</a>
+            </li>
+            <li>
+              <a class="inline-block my-2" href="./">Cửa hàng tạp hoá</a>
+            </li>
+            <li>
+              <a class="inline-block my-2" href="./">Siêu thị mini</a>
+            </li>
+            <li>
+              <a class="inline-block my-2" href="./">Cửa hàng mỹ phẩm</a>
+            </li>
+          </ul>
+        </div>
+
+        <div  style="color: #2F2F4F;"  class="text-sm border-t border-current">
+          <input class="hidden" type="radio" name="collapse" id="collapse5">
+
+          <label class="flex justify-between items-center p-4" for="collapse5">
+            <h4 class="text-base font-bold text-white">Trợ giúp</h4>
+
+            <span class="arrow inline-block text-doz-title">
+              <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.07492 3L9.79972 7L14.5245 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </label>
+
+          <ul class="collapse-menu text-white pl-4">
+            <li>
+              <a class="inline-block my-2" href="./">Trung tâm trợ giúp</a>
+            </li>
+            <li>
+              <a class="inline-block my-2" href="./">Tài liệu nhà phát triển</a>
+            </li>
+            <li>
+              <a class="inline-block my-2" href="./">Hình thức thanh toán SEO web</a>
+            </li>
+            <li>
+              <a class="inline-block my-2" href="./">Chính sách bảo mật</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--/ Collapsible menu -->
+
+
+      <div class="flex-1 md:grid hidden xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 gap-3 xl:mt-32 lg:mt-24 md:mt-16 mt-8">
         <div class="md:mb-8 xl:text-xl md:text-lg text-sm">
           <div class="mb-8 md:w-auto w-24">
             <img src="./images/logo.svg" alt="dozada">
@@ -778,7 +986,7 @@
         </div>
 
         <div class="md:mt-16 mt-8 xl:text-xl md:text-lg text-sm">
-          <h4 class="xl:text-26 lg:text-xl text-base font-bold mb-6">Dịch vụ hỗ trợ</h4>
+          <h4 class="xl:text-26 lg:text-2xl md:text-xl text-base font-bold mb-6">Dịch vụ hỗ trợ</h4>
 
           <ul>
             <li>
@@ -797,7 +1005,7 @@
         </div>
 
         <div class="md:mt-16 mt-8 xl:text-xl md:text-lg text-sm">
-          <h4 class="xl:text-26 lg:text-xl text-base font-bold mb-6">Kênh bán hàng</h4>
+          <h4 class="xl:text-26 lg:text-2xl md:text-xl text-base font-bold mb-6">Kênh bán hàng</h4>
 
           <ul>
             <li>
@@ -819,7 +1027,7 @@
         </div>
 
         <div class="md:mt-16 mt-8 xl:text-xl md:text-lg text-sm">
-          <h4 class="xl:text-26 lg:text-xl text-base font-bold mb-6">Quản lí bán hàng</h4>
+          <h4 class="xl:text-26 lg:text-2xl md:text-xl text-base font-bold mb-6">Quản lí bán hàng</h4>
 
           <ul>
             <li>
@@ -838,7 +1046,7 @@
         </div>
 
         <div class="md:mt-16 mt-8 xl:text-xl md:text-lg text-sm">
-          <h4 class="xl:text-26 lg:text-xl text-base font-bold mb-6">Trợ giúp</h4>
+          <h4 class="xl:text-26 lg:text-2xl md:text-xl text-base font-bold mb-6">Trợ giúp</h4>
 
           <ul>
             <li>
