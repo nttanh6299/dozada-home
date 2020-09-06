@@ -20336,6 +20336,10 @@ video {
   width: 100vw;
 }
 
+.w-9\/10 {
+  width: 90%;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -23245,7 +23249,7 @@ input[name="collapse"]:checked ~ label .arrow {
 .slide-viewer {
   position: relative; /* needed for IE7 */
   overflow: hidden;
-  height: 530px;
+  height: 500px;
 }
 
 .slide-group {
@@ -43036,6 +43040,10 @@ input[name="collapse"]:checked ~ label .arrow {
 
   .sm\:w-screen {
     width: 100vw;
+  }
+
+  .sm\:w-9\/10 {
+    width: 90%;
   }
 
   .sm\:z-0 {
@@ -65489,6 +65497,10 @@ input[name="collapse"]:checked ~ label .arrow {
     width: 100vw;
   }
 
+  .md\:w-9\/10 {
+    width: 90%;
+  }
+
   .md\:z-0 {
     z-index: 0;
   }
@@ -87940,6 +87952,10 @@ input[name="collapse"]:checked ~ label .arrow {
     width: 100vw;
   }
 
+  .lg\:w-9\/10 {
+    width: 90%;
+  }
+
   .lg\:z-0 {
     z-index: 0;
   }
@@ -110389,6 +110405,10 @@ input[name="collapse"]:checked ~ label .arrow {
 
   .xl\:w-screen {
     width: 100vw;
+  }
+
+  .xl\:w-9\/10 {
+    width: 90%;
   }
 
   .xl\:z-0 {
